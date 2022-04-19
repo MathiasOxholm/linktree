@@ -1,0 +1,30 @@
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4rem;
+}
+
+.title {
+  text-align: center;
+  font-size: var(--font-size-5);
+  margin-top: 2rem;
+}
+
+.description {
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+  font-size: 20px;
+  color: var(--gray-5);
+}
+
+.profilePicture {
+  align-self: center;
+  display: flex;
+  margin-inline: auto;
+
+  img {
+    border-radius: 100%;
+  }
+}

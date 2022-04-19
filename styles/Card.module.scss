@@ -1,0 +1,23 @@
+.card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid var(--gray-3);
+  color: var(--gray-3);
+  overflow: hidden;
+  font-family: "syne", sans-serif;
+  text-align: center;
+  height: 4rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: 0;
+  font-size: 14px;
+  transition: 0.3s var(--ease-2);
+
+  &:hover {
+    background-color: var(--gray-3);
+    color: var(--gray-9);
+  }
+}
