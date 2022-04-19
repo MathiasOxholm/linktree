@@ -1,5 +1,7 @@
 import "../styles/globals.scss";
-import "open-props/style";
+import "open-props/colors";
+import "open-props/gradients";
+import "open-props/fonts";
 import { NextSeo } from "next-seo";
 
 function MyApp({ Component, pageProps }) {
@@ -10,9 +12,9 @@ function MyApp({ Component, pageProps }) {
         titleTemplate="%s | oxholm.dev"
         defaultTitle="LinkTree"
         description="My personal link tree for oxholm.dev"
-        //canonical="https://calculator-one-brown.vercel.app/"
+        canonical="https://linktree-mathiasoxholm.vercel.app/"
         openGraph={{
-          url: "https://calculator-one-brown.vercel.app/",
+          url: "https://linktree-mathiasoxholm.vercel.app/",
           title: "LinkTree",
           description: "My personal link tree for oxholm.dev",
         }}
@@ -21,6 +23,7 @@ function MyApp({ Component, pageProps }) {
           site: "@OxholmDev",
           cardType: "summary_large_image",
         }}
+        noindex={false}
       />
       <Component {...pageProps} />
     </>
