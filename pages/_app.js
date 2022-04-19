@@ -2,6 +2,7 @@ import "../styles/globals.scss";
 import "open-props/colors";
 import "open-props/gradients";
 import "open-props/fonts";
+import "open-props/easings";
 import { NextSeo } from "next-seo";
 
 function MyApp({ Component, pageProps }) {
