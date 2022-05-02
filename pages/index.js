@@ -10,6 +10,7 @@ export default function Home() {
         <main>
           <div className={styles.grid}>
             <h2>My work</h2>
+            <Card title="Resume" url="https://cv.oxholm.dev" />
             <Card title="Github" url="https://github.com/MathiasOxholm" />
           </div>
           <div className={styles.grid}>
