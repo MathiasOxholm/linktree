@@ -2,10 +2,10 @@ import styles from "../styles/Home.module.scss";
 import Header from "../components/Header";
 import Card from "../components/Card";
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <>
-      <Header />
+      <Header title="Mathias Oxholm" description="Frontend Developer" />
       <div className={styles.container}>
         <main>
           <div className={styles.grid}>
@@ -35,3 +35,5 @@ export default function Home() {
     </>
   );
 }
+
+export default Home;

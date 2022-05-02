@@ -4,8 +4,9 @@ import "open-props/gradients";
 import "open-props/fonts";
 import "open-props/easings";
 import { NextSeo } from "next-seo";
+import type { AppProps } from "next/app";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <NextSeo

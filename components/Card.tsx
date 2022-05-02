@@ -1,7 +1,11 @@
 import styles from "../styles/Card.module.scss";
-import Link from "next/link";
 
-const Card = ({ title, url }) => {
+interface Props {
+  title: string;
+  url: string;
+}
+
+const Card: React.FC<Props> = ({ title, url }) => {
   return (
     <a href={url} target="_blank" rel="noreferrer" className={styles.card}>
       {title}

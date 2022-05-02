@@ -1,7 +1,12 @@
 import Image from "next/image";
 import styles from "../styles/Header.module.scss";
 
-const Header = () => {
+interface Props {
+  title: string;
+  description: string;
+}
+
+const Header: React.FC<Props> = ({ title, description }) => {
   return (
     <div className={styles.header}>
       <div className={styles.profilePicture}>
@@ -12,8 +17,8 @@ const Header = () => {
           alt="Mathias Oxholm Profile Picture"
         />
       </div>
-      <h1 className={styles.title}>Mathias Oxholm</h1>
-      <p className={styles.description}>Frontend Developer</p>
+      <h1 className={styles.title}>{title}</h1>
+      <p className={styles.description}>{description}</p>
     </div>
   );
 };
